@@ -1,4 +1,4 @@
-require_relative '../dockingstation'
+require_relative '../lib/dockingstation'
 describe DockingStation do
 
 end

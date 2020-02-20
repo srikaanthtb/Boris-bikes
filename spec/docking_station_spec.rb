@@ -16,6 +16,13 @@ it "docks a bike" do
 
 end
 
+describe '#dock' do
+   it 'raises an error when full' do
+     subject.dock(Bike.new)
+     expect { subject.dock Bike.new }.to raise_error 'Docking station full'
+   end
+ end
+
 describe '#release_bike' do
   it 'raises an error when there are no bikes available' do
     # Let's not dock a bike first:

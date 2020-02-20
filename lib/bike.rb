@@ -1,4 +1,4 @@
-require 'dockingstation'
+require_relative 'dockingstation'
 class Bike
   def working?
     true
